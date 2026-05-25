@@ -1,0 +1,318 @@
+/* =====================================================
+   Udula Institute - Animations & Additional Styles
+   ===================================================== */
+
+/* ---- Counter Animation ---- */
+@keyframes countUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ---- Pulse Ring ---- */
+@keyframes pulseRing {
+  0%   { transform: scale(1); opacity: 0.6; }
+  100% { transform: scale(1.5); opacity: 0; }
+}
+
+.pulse-ring {
+  position: relative;
+  display: inline-flex;
+}
+
+.pulse-ring::before {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  background: var(--primary);
+  animation: pulseRing 2s ease-out infinite;
+}
+
+/* ---- Card Hover Glow ---- */
+.glow-hover {
+  transition: box-shadow var(--transition);
+}
+
+.glow-hover:hover {
+  box-shadow: 0 0 0 2px var(--primary), var(--shadow-lg);
+}
+
+/* ---- Timeline / Steps ---- */
+.timeline {
+  position: relative;
+  padding-left: 32px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 8px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--primary), var(--accent));
+  border-radius: var(--radius-full);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 28px;
+  animation: fadeInUp 0.4s ease both;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -28px;
+  top: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--primary);
+  border: 2px solid var(--surface);
+  box-shadow: 0 0 0 2px var(--primary);
+}
+
+.timeline-date {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+}
+
+.timeline-content {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 16px 20px;
+}
+
+.timeline-title { font-size: 0.95rem; font-weight: 700; margin-bottom: 6px; }
+.timeline-text { font-size: 0.85rem; color: var(--text-muted); line-height: 1.5; }
+
+/* ---- Notice Board ---- */
+.notice-board {
+  background: linear-gradient(135deg, #fff9e6, #fffbe8);
+  border: 2px solid #fbbf24;
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  position: relative;
+  box-shadow: 0 4px 20px rgba(251,191,36,0.15);
+}
+
+[data-theme="dark"] .notice-board {
+  background: linear-gradient(135deg, rgba(251,191,36,0.08), rgba(245,158,11,0.05));
+}
+
+.notice-board::before {
+  content: '📌';
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.4rem;
+}
+
+.notice-board-title {
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #92400e;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+[data-theme="dark"] .notice-board-title { color: #fbbf24; }
+
+/* ---- Highlight Box ---- */
+.highlight-box {
+  background: linear-gradient(135deg, rgba(26,79,214,0.06), rgba(6,182,212,0.04));
+  border: 1px solid rgba(26,79,214,0.15);
+  border-left: 4px solid var(--primary);
+  border-radius: var(--radius-md);
+  padding: 20px 24px;
+  margin: 24px 0;
+}
+
+.highlight-box h4 {
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+  color: var(--primary);
+}
+
+.highlight-box p, .highlight-box li {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* ---- Chip Tags ---- */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 600;
+  background: var(--gray-100);
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  margin: 3px;
+}
+
+/* ---- Category Filter Buttons ---- */
+.filter-bar {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+
+.filter-btn {
+  padding: 8px 18px;
+  border-radius: var(--radius-full);
+  border: 1.5px solid var(--border);
+  background: var(--card-bg);
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.filter-btn:hover { border-color: var(--primary); color: var(--primary); }
+.filter-btn.active { background: var(--primary); color: white; border-color: var(--primary); }
+
+/* ---- Stream Section Headers ---- */
+.stream-section-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+  margin-top: 40px;
+}
+
+.stream-section-header:first-of-type { margin-top: 0; }
+
+.stream-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.stream-section-header h3 { font-size: 1.1rem; font-weight: 700; }
+.stream-section-header p { font-size: 0.82rem; color: var(--text-muted); }
+
+/* ---- Progress Bars ---- */
+.progress-bar-wrap {
+  background: var(--gray-200);
+  border-radius: var(--radius-full);
+  height: 8px;
+  overflow: hidden;
+  margin-top: 8px;
+}
+
+.progress-bar {
+  height: 100%;
+  border-radius: var(--radius-full);
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+  transition: width 1s ease;
+}
+
+/* ---- Responsive table fix ---- */
+.table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: var(--radius-lg);
+}
+
+/* ---- Notification Dot ---- */
+.notif-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--secondary);
+  flex-shrink: 0;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+/* ---- Hover underline link ---- */
+.hover-link {
+  color: var(--primary);
+  font-weight: 500;
+  position: relative;
+  display: inline-block;
+}
+
+.hover-link::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 0;
+  height: 1.5px;
+  background: var(--primary);
+  transition: width var(--transition-fast);
+}
+
+.hover-link:hover::after { width: 100%; }
+
+/* ---- Input Search ---- */
+.search-wrap {
+  position: relative;
+  max-width: 420px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 11px 16px 11px 44px;
+  background: var(--card-bg);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-full);
+  font-size: 0.875rem;
+  font-family: var(--font-primary);
+  color: var(--text);
+  outline: none;
+  transition: all var(--transition-fast);
+}
+
+.search-input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(26,79,214,0.1);
+}
+
+.search-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  pointer-events: none;
+}
+
+/* ---- Grade Badge ---- */
+.grade-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  background: rgba(6,182,212,0.1);
+  color: var(--accent);
+  border-radius: var(--radius-full);
+  font-size: 0.72rem;
+  font-weight: 600;
+}
