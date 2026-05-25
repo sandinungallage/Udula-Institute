@@ -1,0 +1,126 @@
+{
+  "al": [
+    {
+      "subject": "Combined Maths",
+      "stream": "Physical Science",
+      "monthly_fee": 3500,
+      "registration_fee": 500,
+      "paper_fee": 200,
+      "teacher": "Mr. Kamal Perera",
+      "notes": "Paper fee collected separately each month"
+    },
+    {
+      "subject": "Physics",
+      "stream": "Physical Science",
+      "monthly_fee": 3000,
+      "registration_fee": 500,
+      "paper_fee": 150,
+      "teacher": "Ms. Dilani Fernando",
+      "notes": ""
+    },
+    {
+      "subject": "Chemistry",
+      "stream": "Physical / Biological Science",
+      "monthly_fee": 3000,
+      "registration_fee": 500,
+      "paper_fee": 150,
+      "teacher": "Mr. Ruwan Jayasinghe",
+      "notes": ""
+    },
+    {
+      "subject": "Biology",
+      "stream": "Biological Science",
+      "monthly_fee": 2800,
+      "registration_fee": 500,
+      "paper_fee": 100,
+      "teacher": "Ms. Sandya Kumari",
+      "notes": ""
+    },
+    {
+      "subject": "Accounting",
+      "stream": "Commerce",
+      "monthly_fee": 3200,
+      "registration_fee": 500,
+      "paper_fee": 200,
+      "teacher": "Mr. Pradeep Silva",
+      "notes": ""
+    },
+    {
+      "subject": "Economics",
+      "stream": "Commerce",
+      "monthly_fee": 2800,
+      "registration_fee": 500,
+      "paper_fee": 150,
+      "teacher": "Ms. Nirmala Dissanayake",
+      "notes": ""
+    }
+  ],
+  "ol": [
+    {
+      "subject": "Mathematics",
+      "grade": "Grade 8 – 11",
+      "monthly_fee": 2500,
+      "registration_fee": 300,
+      "paper_fee": 150,
+      "teacher": "Mr. Asanka Wickramasinghe",
+      "notes": ""
+    },
+    {
+      "subject": "Science",
+      "grade": "Grade 8 – 11",
+      "monthly_fee": 2500,
+      "registration_fee": 300,
+      "paper_fee": 150,
+      "teacher": "Ms. Chathurika Rathnayake",
+      "notes": ""
+    },
+    {
+      "subject": "English",
+      "grade": "Grade 8 – 11",
+      "monthly_fee": 2200,
+      "registration_fee": 300,
+      "paper_fee": 100,
+      "teacher": "Mr. Lasith Gamage",
+      "notes": ""
+    },
+    {
+      "subject": "Sinhala",
+      "grade": "Grade 8 – 11",
+      "monthly_fee": 2000,
+      "registration_fee": 300,
+      "paper_fee": 100,
+      "teacher": "Ms. Madhavi Herath",
+      "notes": ""
+    },
+    {
+      "subject": "History",
+      "grade": "Grade 8 – 11",
+      "monthly_fee": 2000,
+      "registration_fee": 300,
+      "paper_fee": 100,
+      "teacher": "Mr. Gayan Bandara",
+      "notes": ""
+    },
+    {
+      "subject": "ICT",
+      "grade": "Grade 8 – 11",
+      "monthly_fee": 2200,
+      "registration_fee": 300,
+      "paper_fee": 100,
+      "teacher": "Ms. Thilini Amarasekara",
+      "notes": "Computer lab usage included"
+    }
+  ],
+  "payment_info": {
+    "due_date": "On or before the 10th of each month",
+    "methods": ["Cash payment at institute counter", "Bank transfer to BOC Horana branch"],
+    "bank_details": {
+      "bank": "Bank of Ceylon (BOC)",
+      "branch": "Horana",
+      "account_name": "Udula Institute",
+      "account_number": "XXXX-XXXX-XXXX"
+    },
+    "late_fee": "Rs. 200 late fee applies after 10th",
+    "discount": "5% discount for siblings enrolled in the same term"
+  }
+}

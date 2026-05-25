@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "date": "2025-05-20",
+    "title": "O/L Model Paper Examination – June 2025",
+    "category": "Exam",
+    "content": "A model paper examination will be held for all O/L students on June 7, 2025. All students must register before May 30. Examination fee is Rs. 500 per subject. Contact the office for more details.",
+    "important": true
+  },
+  {
+    "id": 2,
+    "date": "2025-05-18",
+    "title": "New A/L Chemistry Batch Starting – June 2025",
+    "category": "New Batch",
+    "content": "A new A/L Chemistry batch will commence on June 2, 2025 under Mr. Ruwan Jayasinghe. Classes will be held every Wednesday and Sunday. Early registration is open. Limited seats available.",
+    "important": true
+  },
+  {
+    "id": 3,
+    "date": "2025-05-15",
+    "title": "Vesak Season Holiday Notice",
+    "category": "Holiday",
+    "content": "Please note that all classes are suspended on May 12 and 13, 2025 in observance of Vesak. Classes will resume on May 14 as per the regular schedule.",
+    "important": false
+  },
+  {
+    "id": 4,
+    "date": "2025-05-10",
+    "title": "Monthly Fee Payment Reminder",
+    "category": "Fees",
+    "content": "This is a reminder that monthly fees for May 2025 are due on or before May 10. A late fee of Rs. 200 will be charged after the due date. Please ensure timely payment to avoid disruption.",
+    "important": false
+  },
+  {
+    "id": 5,
+    "date": "2025-05-05",
+    "title": "Special Revision Classes for A/L Students",
+    "category": "Classes",
+    "content": "Special revision classes for A/L 2025 candidates will begin from May 20. These intensive sessions will cover past paper analysis and exam technique. Attendance is strongly recommended for all A/L students.",
+    "important": true
+  },
+  {
+    "id": 6,
+    "date": "2025-04-28",
+    "title": "Institute Library Now Open",
+    "category": "Facilities",
+    "content": "We are pleased to announce that the institute library is now open to all enrolled students. The library houses over 500 reference books and past papers. Library hours: Weekdays 3:00 PM – 7:00 PM, Weekends 9:00 AM – 5:00 PM.",
+    "important": false
+  }
+]

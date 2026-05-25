@@ -1,0 +1,33 @@
+{
+  "al": {
+    "Physical Science": [
+      { "day": "Monday", "time": "6:00 PM – 8:00 PM", "subject": "Combined Maths", "teacher": "Mr. Kamal Perera", "hall": "Hall A", "medium": "Sinhala" },
+      { "day": "Tuesday", "time": "5:00 PM – 7:00 PM", "subject": "Physics", "teacher": "Ms. Dilani Fernando", "hall": "Hall B", "medium": "Sinhala" },
+      { "day": "Wednesday", "time": "5:30 PM – 7:30 PM", "subject": "Chemistry", "teacher": "Mr. Ruwan Jayasinghe", "hall": "Hall A", "medium": "Sinhala" },
+      { "day": "Saturday", "time": "8:00 AM – 10:00 AM", "subject": "Combined Maths", "teacher": "Mr. Kamal Perera", "hall": "Hall A", "medium": "Sinhala" },
+      { "day": "Sunday", "time": "8:00 AM – 10:00 AM", "subject": "Physics", "teacher": "Ms. Dilani Fernando", "hall": "Hall B", "medium": "Sinhala" },
+      { "day": "Sunday", "time": "10:30 AM – 12:30 PM", "subject": "Chemistry", "teacher": "Mr. Ruwan Jayasinghe", "hall": "Hall A", "medium": "Sinhala" }
+    ],
+    "Biological Science": [
+      { "day": "Monday", "time": "4:00 PM – 6:00 PM", "subject": "Biology", "teacher": "Ms. Sandya Kumari", "hall": "Hall C", "medium": "Sinhala" },
+      { "day": "Thursday", "time": "5:00 PM – 7:00 PM", "subject": "Chemistry", "teacher": "Mr. Ruwan Jayasinghe", "hall": "Hall B", "medium": "Sinhala" },
+      { "day": "Saturday", "time": "10:30 AM – 12:30 PM", "subject": "Biology", "teacher": "Ms. Sandya Kumari", "hall": "Hall C", "medium": "Sinhala" }
+    ],
+    "Commerce": [
+      { "day": "Tuesday", "time": "4:00 PM – 6:00 PM", "subject": "Accounting", "teacher": "Mr. Pradeep Silva", "hall": "Hall D", "medium": "Sinhala" },
+      { "day": "Thursday", "time": "4:00 PM – 6:00 PM", "subject": "Economics", "teacher": "Ms. Nirmala Dissanayake", "hall": "Hall D", "medium": "Sinhala" },
+      { "day": "Saturday", "time": "1:00 PM – 3:00 PM", "subject": "Accounting", "teacher": "Mr. Pradeep Silva", "hall": "Hall D", "medium": "Sinhala" },
+      { "day": "Sunday", "time": "1:00 PM – 3:00 PM", "subject": "Economics", "teacher": "Ms. Nirmala Dissanayake", "hall": "Hall D", "medium": "Sinhala" }
+    ]
+  },
+  "ol": [
+    { "day": "Monday", "time": "2:00 PM – 4:00 PM", "subject": "Mathematics", "teacher": "Mr. Asanka Wickramasinghe", "hall": "Hall E", "grade": "Grade 10 & 11", "medium": "Sinhala" },
+    { "day": "Tuesday", "time": "2:00 PM – 4:00 PM", "subject": "Science", "teacher": "Ms. Chathurika Rathnayake", "hall": "Hall E", "grade": "Grade 10 & 11", "medium": "Sinhala" },
+    { "day": "Wednesday", "time": "2:00 PM – 4:00 PM", "subject": "English", "teacher": "Mr. Lasith Gamage", "hall": "Hall F", "grade": "Grade 10 & 11", "medium": "English" },
+    { "day": "Wednesday", "time": "4:30 PM – 6:00 PM", "subject": "Sinhala", "teacher": "Ms. Madhavi Herath", "hall": "Hall F", "grade": "Grade 10 & 11", "medium": "Sinhala" },
+    { "day": "Thursday", "time": "2:00 PM – 4:00 PM", "subject": "History", "teacher": "Mr. Gayan Bandara", "hall": "Hall E", "grade": "Grade 10 & 11", "medium": "Sinhala" },
+    { "day": "Friday", "time": "2:00 PM – 4:00 PM", "subject": "ICT", "teacher": "Ms. Thilini Amarasekara", "hall": "Computer Lab", "grade": "Grade 10 & 11", "medium": "Sinhala" },
+    { "day": "Saturday", "time": "3:30 PM – 5:30 PM", "subject": "Mathematics", "teacher": "Mr. Asanka Wickramasinghe", "hall": "Hall E", "grade": "Grade 8 & 9", "medium": "Sinhala" },
+    { "day": "Sunday", "time": "3:30 PM – 5:30 PM", "subject": "Science", "teacher": "Ms. Chathurika Rathnayake", "hall": "Hall E", "grade": "Grade 8 & 9", "medium": "Sinhala" }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "al": [
+    {
+      "id": 1,
+      "name": "Mr. Kamal Perera",
+      "subject": "Combined Maths",
+      "stream": "A/L",
+      "qualification": "B.Sc. (Hons) Mathematics, University of Colombo",
+      "experience": "12 years",
+      "image": "assets/images/teacher1.jpg",
+      "bio": "A dedicated educator specializing in Combined Mathematics with over 12 years of experience guiding A/L students to top results."
+    },
+    {
+      "id": 2,
+      "name": "Ms. Dilani Fernando",
+      "subject": "Physics",
+      "stream": "A/L",
+      "qualification": "B.Sc. Physics, University of Kelaniya",
+      "experience": "9 years",
+      "image": "assets/images/teacher2.jpg",
+      "bio": "Passionate physics teacher known for making complex concepts accessible through practical demonstrations and innovative teaching methods."
+    },
+    {
+      "id": 3,
+      "name": "Mr. Ruwan Jayasinghe",
+      "subject": "Chemistry",
+      "stream": "A/L",
+      "qualification": "B.Sc. Chemistry, University of Sri Jayewardenepura",
+      "experience": "11 years",
+      "image": "assets/images/teacher3.jpg",
+      "bio": "Expert chemistry tutor with a proven record of producing island rankers. Specializes in both theory and practical-based teaching."
+    },
+    {
+      "id": 4,
+      "name": "Ms. Sandya Kumari",
+      "subject": "Biology",
+      "stream": "A/L",
+      "qualification": "B.Sc. Biology, University of Peradeniya",
+      "experience": "8 years",
+      "image": "assets/images/teacher4.jpg",
+      "bio": "Enthusiastic biology educator who brings the subject to life with real-world examples and up-to-date content aligned with the latest syllabus."
+    },
+    {
+      "id": 5,
+      "name": "Mr. Pradeep Silva",
+      "subject": "Accounting",
+      "stream": "A/L",
+      "qualification": "ACCA, B.Com (Hons), University of Colombo",
+      "experience": "14 years",
+      "image": "assets/images/teacher5.jpg",
+      "bio": "Senior accounting tutor with professional ACCA qualifications. Renowned for structured, exam-focused teaching strategies."
+    },
+    {
+      "id": 6,
+      "name": "Ms. Nirmala Dissanayake",
+      "subject": "Economics",
+      "stream": "A/L",
+      "qualification": "B.A. Economics, University of Kelaniya",
+      "experience": "10 years",
+      "image": "assets/images/teacher6.jpg",
+      "bio": "Award-winning economics educator with a talent for connecting economic theory to current Sri Lankan and global events."
+    }
+  ],
+  "ol": [
+    {
+      "id": 7,
+      "name": "Mr. Asanka Wickramasinghe",
+      "subject": "Mathematics",
+      "stream": "O/L",
+      "qualification": "B.Ed. Mathematics, University of Colombo",
+      "experience": "10 years",
+      "image": "assets/images/teacher7.jpg",
+      "bio": "Experienced O/L Mathematics teacher who uses step-by-step methods to help every student build strong mathematical foundations."
+    },
+    {
+      "id": 8,
+      "name": "Ms. Chathurika Rathnayake",
+      "subject": "Science",
+      "stream": "O/L",
+      "qualification": "B.Sc. Education, University of Jayewardenepura",
+      "experience": "7 years",
+      "image": "assets/images/teacher8.jpg",
+      "bio": "Dynamic science teacher who makes learning engaging and practical for O/L students through experiments and visual aids."
+    },
+    {
+      "id": 9,
+      "name": "Mr. Lasith Gamage",
+      "subject": "English",
+      "stream": "O/L",
+      "qualification": "B.A. English, University of Kelaniya",
+      "experience": "8 years",
+      "image": "assets/images/teacher9.jpg",
+      "bio": "Proficient English tutor specializing in O/L exam preparation with strong focus on grammar, comprehension, and essay writing."
+    },
+    {
+      "id": 10,
+      "name": "Ms. Madhavi Herath",
+      "subject": "Sinhala",
+      "stream": "O/L",
+      "qualification": "B.A. Sinhala, University of Sri Jayewardenepura",
+      "experience": "9 years",
+      "image": "assets/images/teacher10.jpg",
+      "bio": "Dedicated Sinhala language and literature teacher who helps students excel in both written and oral components of the O/L exam."
+    },
+    {
+      "id": 11,
+      "name": "Mr. Gayan Bandara",
+      "subject": "History",
+      "stream": "O/L",
+      "qualification": "B.A. History, University of Peradeniya",
+      "experience": "6 years",
+      "image": "assets/images/teacher11.jpg",
+      "bio": "Engaging history educator who brings Sri Lankan and world history to life through stories, timelines, and interactive discussions."
+    },
+    {
+      "id": 12,
+      "name": "Ms. Thilini Amarasekara",
+      "subject": "ICT",
+      "stream": "O/L",
+      "qualification": "B.Sc. IT, SLIIT",
+      "experience": "5 years",
+      "image": "assets/images/teacher12.jpg",
+      "bio": "Tech-savvy ICT teacher ensuring students are prepared for both theoretical and practical components of the O/L ICT examination."
+    }
+  ]
+}
