@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Gallery – Photos from Udula Institute, Horana – classrooms, events, achievements and student life." />
+  <title>Gallery – Udula Institute | Horana</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/animations.css" />
+  <style>
+    .gallery-placeholder {
+      aspect-ratio: 4/3;
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 12px;
+      font-size: 2.5rem;
+      color: white;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform var(--transition);
+    }
+    .gallery-placeholder:hover { transform: scale(1.02); }
+    .gallery-placeholder span { font-size: 0.85rem; font-weight: 600; color: rgba(255,255,255,0.9); }
+    .lightbox {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.92);
+      z-index: 10000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s;
+    }
+    .lightbox.open { opacity: 1; pointer-events: all; }
+    .lightbox-content {
+      max-width: 900px;
+      width: 90%;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+    .lightbox-img {
+      width: 100%;
+      aspect-ratio: 16/9;
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 4rem;
+    }
+    .lightbox-caption { margin-top: 16px; font-size: 1rem; }
+    .lightbox-close {
+      position: absolute;
+      top: -40px;
+      right: 0;
+      background: none;
+      border: none;
+      color: white;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body data-page="gallery">
+
+  <nav class="navbar" id="mainNav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-icon">🎓</div>
+        <div class="nav-logo-text">
+          <span class="nav-logo-name">Udula Institute</span>
+          <span class="nav-logo-sub">Horana, Sri Lanka</span>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="teachers.html" class="nav-link">Teachers</a></li>
+        <li><a href="timetable.html" class="nav-link">Timetable</a></li>
+        <li><a href="fees.html" class="nav-link">Fees</a></li>
+        <li><a href="holidays.html" class="nav-link">Holidays</a></li>
+        <li><a href="notices.html" class="nav-link">Notices</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle">🌙</button>
+        <a href="contact.html" class="nav-cta">Enroll Now</a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="teachers.html" class="nav-link">Teachers</a>
+      <a href="timetable.html" class="nav-link">Timetable</a>
+      <a href="fees.html" class="nav-link">Fees</a>
+      <a href="holidays.html" class="nav-link">Holidays</a>
+      <a href="notices.html" class="nav-link">Notices</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+  </nav>
+
+  <div class="page-header">
+    <h1>Our Gallery</h1>
+    <p>Moments from Udula Institute – classrooms, events, achievements, and student life</p>
+    <div class="breadcrumb"><a href="index.html">Home</a> › Gallery</div>
+  </div>
+
+  <main>
+    <section class="section" id="gallerySection">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Photos</span>
+          <h2 class="section-title">Life at Udula Institute</h2>
+          <p class="section-sub">A glimpse into our classrooms, events, and learning environment</p>
+        </div>
+
+        <!-- Filter -->
+        <div class="filter-bar" id="galleryFilterBar">
+          <button class="filter-btn active" data-filter="all" id="gFilterAll">All Photos</button>
+          <button class="filter-btn" data-filter="classrooms" id="gFilterClassrooms">🏫 Classrooms</button>
+          <button class="filter-btn" data-filter="events" id="gFilterEvents">🎉 Events</button>
+          <button class="filter-btn" data-filter="achievements" id="gFilterAchievements">🏆 Achievements</button>
+        </div>
+
+        <div class="gallery-grid" id="galleryGrid">
+          <!-- Classroom Photos -->
+          <div class="gallery-placeholder" style="background:linear-gradient(135deg,#1a4fd6,#3b6fe8);" data-caption="Main Teaching Hall A" data-category="classrooms" id="gItem1">
+            🏫<span>Main Teaching Hall A</span>
+          </div>
+          <div class="gallery-placeholder" style="background:linear-gradient(135deg,#7c3aed,#9f67fa);" data-caption="Computer Laboratory" data-category="classrooms" id="gItem2">
+            💻<span>Computer Laboratory</span>
+          </div>
+          <div class="gallery-placeholder" style="background:linear-gradient(135deg,#0891b2,#06b6d4);" data-caption="Student Library" data-category="classrooms" id="gItem3">
+            📚<span>Student Library</span>
+          </div>
+          <div class="gallery-placeholder" style="background:linear-gradient(135deg,#059669,#10b981);" data-caption="Chemistry Lab Session" data-category="classrooms" id="gItem4">
+            🔬<span>Chemistry Lab Session</span>
+          </div>
+          <!-- Events -->
+          <div class="gallery-placeholder" style="background:linear-gradient(135deg,#d97706,#f59e0b);" data-caption="Annual Prize Giving 2024" data-category="events" id="gItem5">
+            🏆<span>Annual Prize Giving 2024</span>
+          </div>
+          <div class="gallery-placeholder" style="background:linear-gradient(135deg,#dc2626,#ef4444);" data-caption="Students' Day Celebration" data-category="events" id="gItem6">
+            🎉<span>Students' Day Celebration</span>
+          </div>
+          <div class="gallery-placeholder" style="background:linear-gradient(135deg,#7c3aed,#1a4fd6);" data-caption="Science Exhibition 2024" data-category="events" id="gItem7">
+            🧪<span>Science Exhibition 2024</span>
+          </div>
+          <!-- Achievements -->
+          <div class="gallery-placeholder" style="background:linear-gradient(135deg,#d97706,#f97316);" data-caption="Island Ranker – Combined Maths 2024" data-category="achievements" id="gItem8">
+            🥇<span>Island Ranker – Combined Maths</span>
+          </div>
+          <div class="gallery-placeholder" style="background:linear-gradient(135deg,#1a4fd6,#0891b2);" data-caption="A/L Results 2024 – 95% Pass Rate" data-category="achievements" id="gItem9">
+            📊<span>A/L Results 2024</span>
+          </div>
+          <div class="gallery-placeholder" style="background:linear-gradient(135deg,#059669,#d97706);" data-caption="O/L Top Students 2024" data-category="achievements" id="gItem10">
+            🌟<span>O/L Top Students 2024</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="galleryLightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <div class="lightbox-content" id="lightboxContent">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close lightbox">✕</button>
+      <div class="lightbox-img" id="lightboxImg"></div>
+      <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo"><div class="footer-logo-icon">🎓</div><span class="footer-logo-name">Udula Institute</span></div>
+          <p>Premier A/L and O/L tuition institute in Horana, Sri Lanka. Excellence in education since 2014.</p>
+        </div>
+        <div class="footer-col"><h4>Quick Links</h4><ul class="footer-links">
+          <li><a href="index.html" class="footer-link">🏠 Home</a></li>
+          <li><a href="teachers.html" class="footer-link">👨‍🏫 Teachers</a></li>
+          <li><a href="timetable.html" class="footer-link">📅 Timetable</a></li>
+          <li><a href="fees.html" class="footer-link">💰 Fees</a></li>
+        </ul></div>
+        <div class="footer-col"><h4>More</h4><ul class="footer-links">
+          <li><a href="holidays.html" class="footer-link">🗓️ Holidays</a></li>
+          <li><a href="notices.html" class="footer-link">📢 Notices</a></li>
+          <li><a href="contact.html" class="footer-link">✉️ Contact</a></li>
+        </ul></div>
+        <div class="footer-col"><h4>Contact</h4>
+          <div class="footer-contact-item"><i>📍</i><span>No. 42, Horana Road, Horana</span></div>
+          <div class="footer-contact-item"><i>📞</i><span>+94 11 234 5678</span></div>
+          <div class="footer-contact-item"><i>✉️</i><span>info@udulainstitute.lk</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;width:100%;">
+        <span>© 2025 Udula Institute, Horana. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/pages.js"></script>
+  <script>
+    // Gallery filter & lightbox
+    document.addEventListener('DOMContentLoaded', () => {
+      const items = document.querySelectorAll('.gallery-placeholder');
+      const filterBtns = document.querySelectorAll('#galleryFilterBar .filter-btn');
+      const lightbox = document.getElementById('galleryLightbox');
+      const lightboxImg = document.getElementById('lightboxImg');
+      const lightboxCaption = document.getElementById('lightboxCaption');
+      const lightboxClose = document.getElementById('lightboxClose');
+
+      // Filter
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          const filter = btn.dataset.filter;
+          items.forEach(item => {
+            item.style.display = (filter === 'all' || item.dataset.category === filter) ? 'flex' : 'none';
+          });
+        });
+      });
+
+      // Lightbox
+      items.forEach(item => {
+        item.addEventListener('click', () => {
+          lightboxImg.style.background = item.style.background;
+          lightboxImg.textContent = item.querySelector('span') ? item.firstChild.textContent : '';
+          lightboxCaption.textContent = item.dataset.caption;
+          lightbox.classList.add('open');
+        });
+      });
+
+      lightboxClose.addEventListener('click', () => lightbox.classList.remove('open'));
+      lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) lightbox.classList.remove('open');
+      });
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') lightbox.classList.remove('open');
+      });
+    });
+  </script>
+</body>
+</html>

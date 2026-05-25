@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Latest notices and announcements from Udula Institute, Horana – exam alerts, new batches, holiday notices, and more." />
+  <title>Notices & Announcements – Udula Institute | Horana</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/animations.css" />
+</head>
+<body data-page="notices">
+
+  <nav class="navbar" id="mainNav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-icon">🎓</div>
+        <div class="nav-logo-text">
+          <span class="nav-logo-name">Udula Institute</span>
+          <span class="nav-logo-sub">Horana, Sri Lanka</span>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="teachers.html" class="nav-link">Teachers</a></li>
+        <li><a href="timetable.html" class="nav-link">Timetable</a></li>
+        <li><a href="fees.html" class="nav-link">Fees</a></li>
+        <li><a href="holidays.html" class="nav-link">Holidays</a></li>
+        <li><a href="notices.html" class="nav-link">Notices</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle">🌙</button>
+        <a href="contact.html" class="nav-cta">Enroll Now</a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="teachers.html" class="nav-link">Teachers</a>
+      <a href="timetable.html" class="nav-link">Timetable</a>
+      <a href="fees.html" class="nav-link">Fees</a>
+      <a href="holidays.html" class="nav-link">Holidays</a>
+      <a href="notices.html" class="nav-link">Notices</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+  </nav>
+
+  <div class="page-header">
+    <h1>Notices & Announcements</h1>
+    <p>Stay informed with the latest news, updates, and important notices from Udula Institute</p>
+    <div class="breadcrumb"><a href="index.html">Home</a> › Notices</div>
+  </div>
+
+  <main>
+    <section class="section" id="noticesSection">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Updates</span>
+          <h2 class="section-title">All Notices</h2>
+          <p class="section-sub">Filter by category to find what you're looking for</p>
+        </div>
+
+        <!-- Filter Bar -->
+        <div class="filter-bar" id="noticeFilterBar">
+          <button class="filter-btn active" data-filter="All" id="filterAll">All</button>
+          <button class="filter-btn" data-filter="Exam" id="filterExam">📝 Exams</button>
+          <button class="filter-btn" data-filter="New Batch" id="filterNewBatch">🆕 New Batches</button>
+          <button class="filter-btn" data-filter="Holiday" id="filterHoliday">🗓️ Holidays</button>
+          <button class="filter-btn" data-filter="Fees" id="filterFees">💰 Fees</button>
+          <button class="filter-btn" data-filter="Classes" id="filterClasses">📚 Classes</button>
+          <button class="filter-btn" data-filter="Facilities" id="filterFacilities">🏢 Facilities</button>
+        </div>
+
+        <div class="announcements-grid" id="noticesContainer">
+          <div class="skeleton" style="height:110px;border-radius:12px;"></div>
+          <div class="skeleton" style="height:110px;border-radius:12px;"></div>
+          <div class="skeleton" style="height:110px;border-radius:12px;"></div>
+          <div class="skeleton" style="height:110px;border-radius:12px;"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo"><div class="footer-logo-icon">🎓</div><span class="footer-logo-name">Udula Institute</span></div>
+          <p>Premier A/L and O/L tuition institute in Horana, Sri Lanka. Excellence in education since 2014.</p>
+        </div>
+        <div class="footer-col"><h4>Quick Links</h4><ul class="footer-links">
+          <li><a href="index.html" class="footer-link">🏠 Home</a></li>
+          <li><a href="teachers.html" class="footer-link">👨‍🏫 Teachers</a></li>
+          <li><a href="timetable.html" class="footer-link">📅 Timetable</a></li>
+          <li><a href="fees.html" class="footer-link">💰 Fees</a></li>
+        </ul></div>
+        <div class="footer-col"><h4>More</h4><ul class="footer-links">
+          <li><a href="holidays.html" class="footer-link">🗓️ Holidays</a></li>
+          <li><a href="resources.html" class="footer-link">📄 Resources</a></li>
+          <li><a href="contact.html" class="footer-link">✉️ Contact</a></li>
+        </ul></div>
+        <div class="footer-col"><h4>Contact</h4>
+          <div class="footer-contact-item"><i>📍</i><span>No. 42, Horana Road, Horana</span></div>
+          <div class="footer-contact-item"><i>📞</i><span>+94 11 234 5678</span></div>
+          <div class="footer-contact-item"><i>✉️</i><span>info@udulainstitute.lk</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;width:100%;">
+        <span>© 2025 Udula Institute, Horana. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/pages.js"></script>
+</body>
+</html>

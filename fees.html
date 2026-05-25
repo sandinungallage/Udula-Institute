@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Class fees and payment information for A/L and O/L tuition at Udula Institute, Horana, Sri Lanka." />
+  <title>Class Fees – Udula Institute | Horana</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/animations.css" />
+</head>
+<body data-page="fees">
+
+  <nav class="navbar" id="mainNav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-icon">🎓</div>
+        <div class="nav-logo-text">
+          <span class="nav-logo-name">Udula Institute</span>
+          <span class="nav-logo-sub">Horana, Sri Lanka</span>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="teachers.html" class="nav-link">Teachers</a></li>
+        <li><a href="timetable.html" class="nav-link">Timetable</a></li>
+        <li><a href="fees.html" class="nav-link">Fees</a></li>
+        <li><a href="holidays.html" class="nav-link">Holidays</a></li>
+        <li><a href="notices.html" class="nav-link">Notices</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle">🌙</button>
+        <a href="contact.html" class="nav-cta">Enroll Now</a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="teachers.html" class="nav-link">Teachers</a>
+      <a href="timetable.html" class="nav-link">Timetable</a>
+      <a href="fees.html" class="nav-link">Fees</a>
+      <a href="holidays.html" class="nav-link">Holidays</a>
+      <a href="notices.html" class="nav-link">Notices</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+  </nav>
+
+  <div class="page-header">
+    <h1>Class Fees</h1>
+    <p>Transparent fee structure for A/L and O/L subjects – 2025</p>
+    <div class="breadcrumb"><a href="index.html">Home</a> › Fees</div>
+  </div>
+
+  <main>
+    <section class="section" id="feesSection">
+      <div class="container" id="feesContainer">
+        <div class="section-header">
+          <span class="section-tag">Pricing</span>
+          <h2 class="section-title">Fee Structure 2025</h2>
+          <p class="section-sub">Competitive fees for high-quality tuition. All fees are in Sri Lankan Rupees (LKR).</p>
+        </div>
+
+        <div class="alert-banner alert-warning" style="margin-bottom:32px;">
+          ⚠️ Fees are subject to revision at the beginning of each academic year. Please confirm the current rates at the institute office.
+        </div>
+
+        <!-- A/L Fees Table -->
+        <div class="fee-table-card" id="alFeeCard">
+          <div class="fee-table-header">
+            <div>
+              <h3>A/L Tuition Fees</h3>
+              <p>Advanced Level subjects – all streams</p>
+            </div>
+          </div>
+          <div class="timetable-wrapper" style="border-radius:0;box-shadow:none;border:none;">
+            <table aria-label="A/L fees table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Subject</th>
+                  <th>Stream</th>
+                  <th>Teacher</th>
+                  <th>Monthly Fee</th>
+                  <th>Registration</th>
+                  <th>Paper Fee/Mo</th>
+                  <th>Total/Mo</th>
+                  <th>Notes</th>
+                </tr>
+              </thead>
+              <tbody id="alFeesBody">
+                <tr><td colspan="9" style="text-align:center;padding:40px;color:var(--text-muted)">⏳ Loading fees...</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- O/L Fees Table -->
+        <div class="fee-table-card" id="olFeeCard">
+          <div class="fee-table-header" style="background:linear-gradient(135deg,#0891b2,#06b6d4)">
+            <div>
+              <h3>O/L Tuition Fees</h3>
+              <p>Ordinary Level subjects – Grade 8 to 11</p>
+            </div>
+          </div>
+          <div class="timetable-wrapper" style="border-radius:0;box-shadow:none;border:none;">
+            <table aria-label="O/L fees table">
+              <thead style="background:linear-gradient(135deg,#0891b2,#06b6d4)">
+                <tr>
+                  <th>#</th>
+                  <th>Subject</th>
+                  <th>Grade</th>
+                  <th>Teacher</th>
+                  <th>Monthly Fee</th>
+                  <th>Registration</th>
+                  <th>Paper Fee/Mo</th>
+                  <th>Total/Mo</th>
+                  <th>Notes</th>
+                </tr>
+              </thead>
+              <tbody id="olFeesBody">
+                <tr><td colspan="9" style="text-align:center;padding:40px;color:var(--text-muted)">⏳ Loading fees...</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Payment Info -->
+        <div class="section-header" style="margin-top:56px;margin-bottom:28px;">
+          <span class="section-tag">Payment</span>
+          <h2 class="section-title">Payment Information</h2>
+          <p class="section-sub">How and when to pay your monthly tuition fees</p>
+        </div>
+
+        <div class="payment-info-card" id="paymentInfoCard">
+          <div class="payment-info-item">
+            <div class="payment-info-label">📅 Due Date</div>
+            <div class="payment-info-value" id="payDueDate">On or before the 10th of each month</div>
+          </div>
+          <div class="payment-info-item">
+            <div class="payment-info-label">💸 Payment Methods</div>
+            <ul class="payment-info-value" id="payMethods" style="padding-left:0;list-style:none;"></ul>
+          </div>
+          <div class="payment-info-item">
+            <div class="payment-info-label">🏦 Bank Details</div>
+            <ul class="payment-info-value" id="bankDetails" style="padding-left:0;list-style:none;"></ul>
+          </div>
+          <div class="payment-info-item">
+            <div class="payment-info-label">⚠️ Late Fee</div>
+            <div class="payment-info-value" id="payLateFee"></div>
+          </div>
+          <div class="payment-info-item">
+            <div class="payment-info-label">🎁 Discount</div>
+            <div class="payment-info-value" id="payDiscount"></div>
+          </div>
+        </div>
+
+        <!-- Important Note -->
+        <div class="highlight-box" style="margin-top:28px;">
+          <h4>📌 Important Note</h4>
+          <p>Registration fees are one-time payments per subject per year. Monthly fees cover tuition only. Paper fees are collected at the beginning of each month along with the tuition fee. All payments must be made at the institute office or via bank transfer (with slip presented to the office within 3 days).</p>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo"><div class="footer-logo-icon">🎓</div><span class="footer-logo-name">Udula Institute</span></div>
+          <p>Premier A/L and O/L tuition institute in Horana, Sri Lanka. Excellence in education since 2014.</p>
+        </div>
+        <div class="footer-col"><h4>Quick Links</h4><ul class="footer-links">
+          <li><a href="index.html" class="footer-link">🏠 Home</a></li>
+          <li><a href="teachers.html" class="footer-link">👨‍🏫 Teachers</a></li>
+          <li><a href="timetable.html" class="footer-link">📅 Timetable</a></li>
+          <li><a href="holidays.html" class="footer-link">🗓️ Holidays</a></li>
+        </ul></div>
+        <div class="footer-col"><h4>More</h4><ul class="footer-links">
+          <li><a href="notices.html" class="footer-link">📢 Notices</a></li>
+          <li><a href="resources.html" class="footer-link">📄 Resources</a></li>
+          <li><a href="contact.html" class="footer-link">✉️ Contact</a></li>
+        </ul></div>
+        <div class="footer-col"><h4>Contact</h4>
+          <div class="footer-contact-item"><i>📍</i><span>No. 42, Horana Road, Horana</span></div>
+          <div class="footer-contact-item"><i>📞</i><span>+94 11 234 5678</span></div>
+          <div class="footer-contact-item"><i>✉️</i><span>info@udulainstitute.lk</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;width:100%;">
+        <span>© 2025 Udula Institute, Horana. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/pages.js"></script>
+</body>
+</html>

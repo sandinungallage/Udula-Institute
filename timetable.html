@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Class timetable for A/L and O/L students at Udula Institute, Horana – weekly schedule for all subjects and streams." />
+  <title>Class Timetable – Udula Institute | Horana</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/animations.css" />
+</head>
+<body data-page="timetable">
+
+  <nav class="navbar" id="mainNav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-icon">🎓</div>
+        <div class="nav-logo-text">
+          <span class="nav-logo-name">Udula Institute</span>
+          <span class="nav-logo-sub">Horana, Sri Lanka</span>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="teachers.html" class="nav-link">Teachers</a></li>
+        <li><a href="timetable.html" class="nav-link">Timetable</a></li>
+        <li><a href="fees.html" class="nav-link">Fees</a></li>
+        <li><a href="holidays.html" class="nav-link">Holidays</a></li>
+        <li><a href="notices.html" class="nav-link">Notices</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle">🌙</button>
+        <a href="contact.html" class="nav-cta">Enroll Now</a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="teachers.html" class="nav-link">Teachers</a>
+      <a href="timetable.html" class="nav-link">Timetable</a>
+      <a href="fees.html" class="nav-link">Fees</a>
+      <a href="holidays.html" class="nav-link">Holidays</a>
+      <a href="notices.html" class="nav-link">Notices</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+  </nav>
+
+  <div class="page-header">
+    <h1>Class Timetable</h1>
+    <p>Weekly schedule for all A/L and O/L classes – 2025</p>
+    <div class="breadcrumb"><a href="index.html">Home</a> › Timetable</div>
+  </div>
+
+  <main>
+    <section class="section" id="timetableSection">
+      <div class="container" id="timetableContainer">
+        <div class="section-header">
+          <span class="section-tag">Schedule</span>
+          <h2 class="section-title">Weekly Class Schedule</h2>
+          <p class="section-sub">All times are in Sri Lanka Standard Time (SLST). Schedule may change during exam season.</p>
+        </div>
+
+        <div class="alert-banner alert-info" id="ttNotice">
+          ℹ️ <strong>Note:</strong> Classes may be rescheduled during public holidays. Check the <a href="holidays.html" style="color:inherit;text-decoration:underline">Holidays page</a> and <a href="notices.html" style="color:inherit;text-decoration:underline">Notices</a> for updates.
+        </div>
+
+        <!-- Tab switcher -->
+        <div class="tabs" id="timetableTabs">
+          <button class="tab-btn active" data-tab="al-tt" id="tabAlTt">A/L Timetable</button>
+          <button class="tab-btn" data-tab="ol-tt" id="tabOlTt">O/L Timetable</button>
+        </div>
+
+        <!-- A/L Timetable -->
+        <div class="tab-content active" data-tab="al-tt" id="alTtContent">
+          <div class="timetable-wrapper">
+            <table id="alTimetable" aria-label="A/L class timetable">
+              <thead>
+                <tr>
+                  <th>Day</th>
+                  <th>Time</th>
+                  <th>Subject</th>
+                  <th>Teacher</th>
+                  <th>Hall</th>
+                  <th>Medium</th>
+                </tr>
+              </thead>
+              <tbody id="alTimetableBody">
+                <tr><td colspan="6" style="text-align:center;padding:40px;color:var(--text-muted)">⏳ Loading timetable...</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- O/L Timetable -->
+        <div class="tab-content" data-tab="ol-tt" id="olTtContent">
+          <div class="timetable-wrapper">
+            <table id="olTimetable" aria-label="O/L class timetable">
+              <thead>
+                <tr>
+                  <th>Day</th>
+                  <th>Time</th>
+                  <th>Subject</th>
+                  <th>Teacher</th>
+                  <th>Hall</th>
+                  <th>Grade</th>
+                  <th>Medium</th>
+                </tr>
+              </thead>
+              <tbody id="olTimetableBody">
+                <tr><td colspan="7" style="text-align:center;padding:40px;color:var(--text-muted)">⏳ Loading timetable...</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Legend -->
+        <div style="margin-top:28px;display:flex;gap:16px;flex-wrap:wrap;align-items:center;">
+          <span style="font-size:0.82rem;font-weight:700;color:var(--text-muted);">LEGEND:</span>
+          <span class="medium-badge medium-sinhala">Sinhala Medium</span>
+          <span class="medium-badge medium-english">English Medium</span>
+          <span class="grade-badge">Grade Range</span>
+          <span style="font-size:0.8rem;color:var(--text-muted);">📍 Hall locations on notice board</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo"><div class="footer-logo-icon">🎓</div><span class="footer-logo-name">Udula Institute</span></div>
+          <p>Premier A/L and O/L tuition institute in Horana, Sri Lanka. Excellence in education since 2014.</p>
+        </div>
+        <div class="footer-col"><h4>Quick Links</h4><ul class="footer-links">
+          <li><a href="index.html" class="footer-link">🏠 Home</a></li>
+          <li><a href="teachers.html" class="footer-link">👨‍🏫 Teachers</a></li>
+          <li><a href="fees.html" class="footer-link">💰 Fees</a></li>
+          <li><a href="holidays.html" class="footer-link">🗓️ Holidays</a></li>
+        </ul></div>
+        <div class="footer-col"><h4>More</h4><ul class="footer-links">
+          <li><a href="notices.html" class="footer-link">📢 Notices</a></li>
+          <li><a href="resources.html" class="footer-link">📄 Resources</a></li>
+          <li><a href="contact.html" class="footer-link">✉️ Contact</a></li>
+        </ul></div>
+        <div class="footer-col"><h4>Contact</h4>
+          <div class="footer-contact-item"><i>📍</i><span>No. 42, Horana Road, Horana</span></div>
+          <div class="footer-contact-item"><i>📞</i><span>+94 11 234 5678</span></div>
+          <div class="footer-contact-item"><i>✉️</i><span>info@udulainstitute.lk</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;width:100%;">
+        <span>© 2025 Udula Institute, Horana. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/pages.js"></script>
+</body>
+</html>
