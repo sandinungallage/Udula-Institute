@@ -1,50 +1,50 @@
 [
   {
     "id": 1,
-    "date": "2025-05-20",
-    "title": "O/L Model Paper Examination – June 2025",
-    "category": "Exam",
-    "content": "A model paper examination will be held for all O/L students on June 7, 2025. All students must register before May 30. Examination fee is Rs. 500 per subject. Contact the office for more details.",
+    "date": "2026-06-01",
+    "title": "O/L Mathematics Seminar – June 15",
+    "category": "Seminars",
+    "content": "A special O/L Mathematics Seminar targeting the upcoming term test and final exam structure will be conducted on June 15, 2026, from 8:00 AM to 2:00 PM. Led by our expert panel, the session will cover essential theorems, equation shortcuts, and past paper analysis. All Grade 10 and 11 students are required to attend.",
     "important": true
   },
   {
     "id": 2,
-    "date": "2025-05-18",
-    "title": "New A/L Chemistry Batch Starting – June 2025",
+    "date": "2026-05-25",
+    "title": "New Grade 10 Science Batch Commencing",
     "category": "New Batch",
-    "content": "A new A/L Chemistry batch will commence on June 2, 2025 under Mr. Ruwan Jayasinghe. Classes will be held every Wednesday and Sunday. Early registration is open. Limited seats available.",
+    "content": "A brand new Science batch for Grade 10 students (English and Sinhala mediums) will commence on June 10, 2026. The class will be conducted by Mr. Ruwan Jayasinghe every Wednesday from 3:30 PM to 6:30 PM. Focus will be placed on base concepts, practical experiments, and interactive assessments. Enroll now to secure your seat.",
     "important": true
   },
   {
     "id": 3,
-    "date": "2025-05-15",
-    "title": "Vesak Season Holiday Notice",
+    "date": "2026-05-18",
+    "title": "Vesak Holiday Notice",
     "category": "Holiday",
-    "content": "Please note that all classes are suspended on May 12 and 13, 2025 in observance of Vesak. Classes will resume on May 14 as per the regular schedule.",
+    "content": "Please note that all regular classes at Udula Institute will be suspended on June 1 and June 2, 2026, in observance of the Vesak festival. Normal class schedules will resume on Wednesday, June 3. We wish all our students and parents a peaceful and blessed Vesak season.",
     "important": false
   },
   {
     "id": 4,
-    "date": "2025-05-10",
-    "title": "Monthly Fee Payment Reminder",
-    "category": "Fees",
-    "content": "This is a reminder that monthly fees for May 2025 are due on or before May 10. A late fee of Rs. 200 will be charged after the due date. Please ensure timely payment to avoid disruption.",
-    "important": false
-  },
-  {
-    "id": 5,
-    "date": "2025-05-05",
-    "title": "Special Revision Classes for A/L Students",
-    "category": "Classes",
-    "content": "Special revision classes for A/L 2025 candidates will begin from May 20. These intensive sessions will cover past paper analysis and exam technique. Attendance is strongly recommended for all A/L students.",
+    "date": "2026-05-15",
+    "title": "Monthly Practice Exam Schedule",
+    "category": "Exam",
+    "content": "The monthly practice exam schedule for June 2026 has been finalized. Mathematics and Science exams will take place on Saturday, June 13, and English and History exams will be held on Sunday, June 14. These papers are designed to simulate final O/L exam conditions. Attendance is mandatory for performance indexing.",
     "important": true
   },
   {
+    "id": 5,
+    "date": "2026-05-10",
+    "title": "ICT Practical Workshop",
+    "category": "Classes",
+    "content": "A hands-on ICT Practical Workshop will be held on Sunday, July 5, 2026, in the main computer lab. Students will get direct practice with flowcharts, spreadsheet operations, and database creation. Due to lab seating capacity, registration is limited to the first 40 applicants. Registrations open on June 1.",
+    "important": false
+  },
+  {
     "id": 6,
-    "date": "2025-04-28",
-    "title": "Institute Library Now Open",
-    "category": "Facilities",
-    "content": "We are pleased to announce that the institute library is now open to all enrolled students. The library houses over 500 reference books and past papers. Library hours: Weekdays 3:00 PM – 7:00 PM, Weekends 9:00 AM – 5:00 PM.",
+    "date": "2026-05-02",
+    "title": "Monthly Tuition Fee Reminder",
+    "category": "Fees",
+    "content": "This is a reminder that tuition fees for the month of June 2026 should be settled on or before June 10. Digital receipts will be sent to parents' registered WhatsApp numbers upon successful payment. A late fee of Rs. 200 will be added from June 11 onwards. Thank you for your cooperation.",
     "important": false
   }
 ]

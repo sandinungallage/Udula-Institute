@@ -1,16 +1,22 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Latest notices and announcements from Udula Institute, Horana – exam alerts, new batches, holiday notices, and more." />
+  <meta name="description" content="Latest notices and announcements from Udula Institute, Horana – exam alerts, new Batches, holiday notices, and more for O/L students." />
   <title>Notices & Announcements – Udula Institute | Horana</title>
   <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+  
+  <!-- Core stylesheets -->
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="stylesheet" href="assets/css/animations.css" />
+  
+  <!-- Premium Notices layout and styling override -->
+  <link rel="stylesheet" href="assets/css/notices-premium.css" />
 </head>
 <body data-page="notices">
 
+  <!-- Transparent Glass Navbar -->
   <nav class="navbar" id="mainNav">
     <div class="nav-container">
       <a href="index.html" class="nav-logo">
@@ -27,15 +33,19 @@
         <li><a href="timetable.html" class="nav-link">Timetable</a></li>
         <li><a href="fees.html" class="nav-link">Fees</a></li>
         <li><a href="holidays.html" class="nav-link">Holidays</a></li>
-        <li><a href="notices.html" class="nav-link">Notices</a></li>
+        <li><a href="notices.html" class="nav-link active">Notices</a></li>
         <li><a href="contact.html" class="nav-link">Contact</a></li>
       </ul>
       <div class="nav-actions">
         <button class="theme-toggle" id="themeToggle">🌙</button>
         <a href="contact.html" class="nav-cta">Enroll Now</a>
-        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </div>
+    
+    <!-- Mobile Collapsible Menu (Legacy fallback) -->
     <div class="mobile-menu" id="mobileMenu">
       <a href="index.html" class="nav-link">Home</a>
       <a href="about.html" class="nav-link">About</a>
@@ -43,80 +53,276 @@
       <a href="timetable.html" class="nav-link">Timetable</a>
       <a href="fees.html" class="nav-link">Fees</a>
       <a href="holidays.html" class="nav-link">Holidays</a>
-      <a href="notices.html" class="nav-link">Notices</a>
+      <a href="notices.html" class="nav-link active">Notices</a>
       <a href="contact.html" class="nav-link">Contact</a>
     </div>
   </nav>
 
-  <div class="page-header">
-    <h1>Notices & Announcements</h1>
-    <p>Stay informed with the latest news, updates, and important notices from Udula Institute</p>
-    <div class="breadcrumb"><a href="index.html">Home</a> › Notices</div>
-  </div>
+  <!-- Premium Hero Section -->
+  <header class="premium-hero">
+    <!-- Particle Canvas background container -->
+    <div class="hero-particle-container"></div>
+    <div class="classroom-backdrop" id="heroBackdrop"></div>
+    <div class="classroom-overlay"></div>
+    
+    <div class="hero-content">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a> <span>›</span> Notices
+      </div>
+      <div class="notif-badge-wrapper">
+        <span class="notif-icon-animated">
+          <span class="bell-ring">🔔</span> Official Announcements
+        </span>
+      </div>
+      <h1><span class="title-reveal">Notices & Announcements</span></h1>
+      <p class="typing-sub">Stay updated with class schedules, seminars, holidays, and institute updates.</p>
+    </div>
 
-  <main>
-    <section class="section" id="noticesSection">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Updates</span>
-          <h2 class="section-title">All Notices</h2>
-          <p class="section-sub">Filter by category to find what you're looking for</p>
+    <!-- Floating Cards elements -->
+    <div class="floating-hero-card f-card-1">
+      <div class="floating-card-icon">📚</div>
+      <div class="floating-card-info">
+        <h4>O/L Coaching Only</h4>
+        <p>100% Focused Curriculum</p>
+      </div>
+    </div>
+    <div class="floating-hero-card f-card-2">
+      <div class="floating-card-icon">🏆</div>
+      <div class="floating-card-info">
+        <h4>Proven Results</h4>
+        <p>Top District Rankings</p>
+      </div>
+    </div>
+
+    <!-- Scroll down indicator -->
+    <div class="scroll-indicator-wrap" id="scrollDownIndicator">
+      <div class="mouse-icon">
+        <div class="mouse-wheel"></div>
+      </div>
+      <span class="scroll-text">Scroll Down</span>
+    </div>
+  </header>
+
+  <!-- Sticky Premium Filter Section -->
+  <section class="notices-filter-section" id="noticesFilterBar">
+    <div class="container">
+      <div class="filter-container">
+        
+        <!-- Animated filter buttons -->
+        <div class="premium-filter-bar">
+          <button class="premium-filter-btn active" data-filter="All">
+            <span class="filter-btn-icon">📢</span> All
+          </button>
+          <button class="premium-filter-btn" data-filter="Exams">
+            <span class="filter-btn-icon">📝</span> Exams
+          </button>
+          <button class="premium-filter-btn" data-filter="New Batches">
+            <span class="filter-btn-icon">🆕</span> New Batches
+          </button>
+          <button class="premium-filter-btn" data-filter="Holidays">
+            <span class="filter-btn-icon">🗓️</span> Holidays
+          </button>
+          <button class="premium-filter-btn" data-filter="Fees">
+            <span class="filter-btn-icon">💰</span> Fees
+          </button>
+          <button class="premium-filter-btn" data-filter="Classes">
+            <span class="filter-btn-icon">📚</span> Classes
+          </button>
+          <button class="premium-filter-btn" data-filter="Seminars">
+            <span class="filter-btn-icon">🎓</span> Seminars
+          </button>
         </div>
 
-        <!-- Filter Bar -->
-        <div class="filter-bar" id="noticeFilterBar">
-          <button class="filter-btn active" data-filter="All" id="filterAll">All</button>
-          <button class="filter-btn" data-filter="Exam" id="filterExam">📝 Exams</button>
-          <button class="filter-btn" data-filter="New Batch" id="filterNewBatch">🆕 New Batches</button>
-          <button class="filter-btn" data-filter="Holiday" id="filterHoliday">🗓️ Holidays</button>
-          <button class="filter-btn" data-filter="Fees" id="filterFees">💰 Fees</button>
-          <button class="filter-btn" data-filter="Classes" id="filterClasses">📚 Classes</button>
-          <button class="filter-btn" data-filter="Facilities" id="filterFacilities">🏢 Facilities</button>
+        <!-- Live Search Bar -->
+        <div class="premium-search-wrap">
+          <input type="text" class="premium-search-input" id="noticeSearch" placeholder="Search announcements..." aria-label="Search notices">
+          <span class="premium-search-icon">🔍</span>
         </div>
 
-        <div class="announcements-grid" id="noticesContainer">
-          <div class="skeleton" style="height:110px;border-radius:12px;"></div>
-          <div class="skeleton" style="height:110px;border-radius:12px;"></div>
-          <div class="skeleton" style="height:110px;border-radius:12px;"></div>
-          <div class="skeleton" style="height:110px;border-radius:12px;"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main SaaS Dashboard Contents -->
+  <main class="container" style="padding-bottom: 80px;">
+    <div class="notices-layout-grid">
+      
+      <!-- Left: Notices dynamic display -->
+      <div class="notices-main-content">
+        <!-- Highlighted featured card container -->
+        <div id="featuredNoticeContainer"></div>
+        
+        <!-- Main cards grid -->
+        <div class="premium-notices-grid" id="noticesContainer">
+          <!-- Skeletons injected here dynamically -->
         </div>
       </div>
-    </section>
+
+      <!-- Right: Dashboard Sidebar widgets -->
+      <aside class="notices-sidebar">
+        
+        <!-- Events list widget -->
+        <div class="sidebar-widget">
+          <div class="widget-title-wrap">
+            <span class="widget-icon">📅</span>
+            <h3>Upcoming Events</h3>
+          </div>
+          <div class="upcoming-events-list" id="sidebarEventsList">
+            <!-- Populated via JS -->
+          </div>
+        </div>
+
+        <!-- Animated statistics widget -->
+        <div class="sidebar-widget">
+          <div class="widget-title-wrap">
+            <span class="widget-icon">📈</span>
+            <h3>Udula O/L Success</h3>
+          </div>
+          <div class="stats-widget-grid">
+            <div class="stat-glow-card">
+              <div class="stat-circle-icon">👨‍🎓</div>
+              <div>
+                <div class="stat-number-display" data-target="1500" data-suffix="+">0</div>
+                <div class="stat-label-display">Active Students</div>
+              </div>
+            </div>
+            <div class="stat-glow-card">
+              <div class="stat-circle-icon">🏫</div>
+              <div>
+                <div class="stat-number-display" data-target="25" data-suffix="+">0</div>
+                <div class="stat-label-display">Weekly Classes</div>
+              </div>
+            </div>
+            <div class="stat-glow-card">
+              <div class="stat-circle-icon">🧑‍🏫</div>
+              <div>
+                <div class="stat-number-display" data-target="10" data-suffix="+">0</div>
+                <div class="stat-label-display">Expert Teachers</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </aside>
+
+    </div>
   </main>
 
+  <!-- Premium Glassmorphism Footer Redesign -->
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
+        
+        <!-- Column 1: Brand details -->
         <div class="footer-brand">
-          <div class="footer-logo"><div class="footer-logo-icon">🎓</div><span class="footer-logo-name">Udula Institute</span></div>
-          <p>Premier A/L and O/L tuition institute in Horana, Sri Lanka. Excellence in education since 2014.</p>
+          <div class="footer-logo">
+            <div class="footer-logo-icon">🎓</div>
+            <span class="footer-logo-name">Udula Institute</span>
+          </div>
+          <p>Premier O/L tuition institute in Horana, Sri Lanka. Excellence in educational coaching since 2014.</p>
+          <div class="social-glow-wrap">
+            <a href="#" class="social-glow-icon" aria-label="Facebook">📘</a>
+            <a href="#" class="social-glow-icon" aria-label="Instagram">📸</a>
+            <a href="#" class="social-glow-icon" aria-label="YouTube">📺</a>
+            <a href="https://wa.me/94112345678" target="_blank" class="social-glow-icon" aria-label="WhatsApp">💬</a>
+          </div>
         </div>
-        <div class="footer-col"><h4>Quick Links</h4><ul class="footer-links">
-          <li><a href="index.html" class="footer-link">🏠 Home</a></li>
-          <li><a href="teachers.html" class="footer-link">👨‍🏫 Teachers</a></li>
-          <li><a href="timetable.html" class="footer-link">📅 Timetable</a></li>
-          <li><a href="fees.html" class="footer-link">💰 Fees</a></li>
-        </ul></div>
-        <div class="footer-col"><h4>More</h4><ul class="footer-links">
-          <li><a href="holidays.html" class="footer-link">🗓️ Holidays</a></li>
-          <li><a href="resources.html" class="footer-link">📄 Resources</a></li>
-          <li><a href="contact.html" class="footer-link">✉️ Contact</a></li>
-        </ul></div>
-        <div class="footer-col"><h4>Contact</h4>
-          <div class="footer-contact-item"><i>📍</i><span>No. 42, Horana Road, Horana</span></div>
-          <div class="footer-contact-item"><i>📞</i><span>+94 11 234 5678</span></div>
-          <div class="footer-contact-item"><i>✉️</i><span>info@udulainstitute.lk</span></div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">🏠 Home</a></li>
+            <li><a href="teachers.html" class="footer-link">👨‍🏫 Teachers</a></li>
+            <li><a href="timetable.html" class="footer-link">📅 Timetable</a></li>
+            <li><a href="fees.html" class="footer-link">💰 Fees</a></li>
+          </ul>
         </div>
+
+        <!-- Column 3: Resources & Holidays -->
+        <div class="footer-col">
+          <h4>More Info</h4>
+          <ul class="footer-links">
+            <li><a href="holidays.html" class="footer-link">🗓️ Holidays</a></li>
+            <li><a href="resources.html" class="footer-link">📄 Resources</a></li>
+            <li><a href="contact.html" class="footer-link">✉️ Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Newsletter Subscription -->
+        <div class="footer-col">
+          <h4>Stay Updated</h4>
+          <div class="newsletter-form-wrap">
+            <p>Subscribe to our newsletter for holiday updates and seminar schedules.</p>
+            <div class="newsletter-input-group">
+              <input type="email" class="newsletter-email-input" placeholder="Your Email Address" aria-label="Email subscription">
+              <button class="newsletter-submit-btn" aria-label="Subscribe">Send</button>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
+    
+    <!-- Footer bottom copy rights -->
     <div class="footer-bottom">
       <div class="container" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;width:100%;">
-        <span>© 2025 Udula Institute, Horana. All rights reserved.</span>
+        <span>© 2026 Udula Institute, Horana. All rights reserved. (Grade 6 - 11 O/L Special Center)</span>
       </div>
     </div>
   </footer>
 
+  <!-- Detail view Modal Popup -->
+  <div class="notice-modal-backdrop" id="noticeDetailModal">
+    <div class="notice-modal-wrapper">
+      <button class="notice-modal-close" onclick="closeNoticeModal()" aria-label="Close modal">×</button>
+      <div class="notice-modal-header">
+        <div class="notice-modal-meta" id="modalNoticeMeta">
+          <!-- Meta injected via JS -->
+        </div>
+        <h2 class="notice-modal-title" id="modalNoticeTitle">Notice Title</h2>
+      </div>
+      <div class="notice-modal-body" id="modalNoticeBody">
+        <!-- Content text injected via JS -->
+      </div>
+      <div class="notice-modal-actions">
+        <button class="modal-btn modal-btn-close" onclick="closeNoticeModal()">Close Window</button>
+        <button class="modal-btn modal-btn-action" id="modalActionBtn">Register / Enroll Now</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Bottom Sticky Navigation Menu -->
+  <div class="mobile-bottom-nav">
+    <a href="index.html" class="mobile-bottom-item">
+      <span class="mobile-bottom-icon">🏠</span>
+      <span>Home</span>
+    </a>
+    <a href="timetable.html" class="mobile-bottom-item">
+      <span class="mobile-bottom-icon">📅</span>
+      <span>Schedule</span>
+    </a>
+    <a href="notices.html" class="mobile-bottom-item active">
+      <span class="mobile-bottom-icon">📢</span>
+      <span>Notices</span>
+    </a>
+    <a href="contact.html" class="mobile-bottom-item">
+      <span class="mobile-bottom-icon">✉️</span>
+      <span>Enroll</span>
+    </a>
+  </div>
+
+  <!-- Floating WhatsApp Contact Button -->
+  <div class="whatsapp-float-widget">
+    <span class="whatsapp-label">Chat on WhatsApp</span>
+    <a href="https://wa.me/94112345678" target="_blank" rel="noopener noreferrer" class="whatsapp-btn-pulse" aria-label="Chat on WhatsApp">
+      💬
+    </a>
+  </div>
+
+  <!-- Scripts -->
   <script src="assets/js/main.js"></script>
-  <script src="assets/js/pages.js"></script>
+  <!-- We skip pages.js to prevent initNoticesPage clashing with our premium script -->
+  <script src="assets/js/notices-premium.js"></script>
 </body>
 </html>
